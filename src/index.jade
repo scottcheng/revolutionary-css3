@@ -1,0 +1,50 @@
+!!!
+html
+  head
+    title CSS3
+    link(href='style.css', rel='stylesheet')
+  body
+    #impress
+
+      #title.step(
+        data-z=20000
+        data-rotate=60
+        data-scale=100
+      )
+
+        h1
+          | <span class="article">The</span><br />
+          | <span class="adj">Revolutionary</span><br />
+          | <span class="noun">CSS 3</span>
+        p.subtitle Web development made infinitely easier.
+
+
+      #impact.step(
+        data-x=-510
+        data-y=0
+        data-rotate=90
+        data-scale=0.25
+      )
+
+        p.animation
+          | <em>Fancy animation</em><br />
+          | with <span class="problem">complex and error-prone JavaScript</span>
+        p.visual
+          | <em>Stunning visual effect</em><br />
+          | with <span class="problem">non-editable rasterized images</span>
+
+
+      #how.step(
+        data-x=0
+        data-y=0
+        data-scale=5
+      )
+        
+        h1 How?
+
+
+
+    // Start impress
+    script(src='lib/impress.js')
+    script
+      impress().init();
