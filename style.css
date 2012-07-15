@@ -74,19 +74,22 @@ margin
   margin-top: 3em;
 }
 #impact p {
+  font-size: 60%;
+}
+#impact-old p {
   margin: 2em 0;
   font-size: 75%;
 }
-#impact p em {
+#impact-old p em {
   font-size: 150%;
 }
-#impact p .problem {
+#impact-old p .problem {
   text-decoration: line-through;
 }
-#impact .problem {
+#impact-old .problem {
   color: #e9463c;
 }
-#impact .animation em {
+#impact-old .animation em {
   display: inline-block;
   -webkit-animation-name: swing-anim;
   -webkit-animation-duration: 1s;
@@ -94,16 +97,15 @@ margin
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-direction: alternate;
 }
-#impact .visual em {
+#impact-old .visual em {
   display: inline-block;
-  background-color: #555;
+  background-image: url("ui/low_contrast_linen.png");
   overflow: hidden;
   padding: 12px 27px;
   -webkit-border-radius: 21px;
-  border: 12px solid #fff;
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f00, 0 0 40px #f00, 0 0 70px #f00, 0 0 80px #f00, 0 0 100px #ff00de, 0 0 150px #f00;
-  box-shadow: 0 0 21px rgba(0,0,0,0.25);
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.75);
 }
 @-webkit-keyframes swing-anim {
   0% {
@@ -269,6 +271,7 @@ margin
 }
 #shadows .inset {
   -webkit-box-sizing: border-box;
+  -webkit-border-radius: 12px;
   margin: auto;
   width: 900px;
   height: 300px;
@@ -330,7 +333,7 @@ margin
   background-color: #fafafa;
 }
 #opacity .renren-button > div {
-  opacity: 0.5;
+  opacity: 0.2;
   -webkit-transition: opacity 0.3s ease-out;
   float: left;
 }

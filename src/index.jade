@@ -19,24 +19,34 @@ html
           | <span class="article">The</span><br />
           | <span class="adj">Revolutionary</span><br />
           | <span class="noun">CSS 3</span>
-        p.subtitle Web development made infinitely easier.
+        p.subtitle A non-technical intro to CSS level 3
+        // p.subtitle Web development made infinitely easier.
 
       #impact.step(
+        data-x=-600
+        data-y=0
+        data-rotate=90
+        data-scale=0.25
+      )
+        p Web development has never been so simple and flexible.
+
+      #impact-old.step(
         data-x=-810
         data-y=0
         data-rotate=90
         data-scale=0.25
       )
-        p.visual 
+        p.visual
           | <em>Stunning visual effect</em><br />
-          | with <span class="problem">non-flexible rasterized images</span>
+          | with <span class="problem">large, non-flexible images</span>
         p.animation
           | <em>Fancy animation</em><br />
-          | with <span class="problem">complex and error-prone JavaScript</span>
+          | with <span class="problem">complex, error-prone JavaScript</span>
 
       #how.step(
         data-x=0
         data-y=0
+        data-z=-100
         data-scale=8
       )
         h1 How?
@@ -65,18 +75,8 @@ html
               .whiskers.whi-left.whi-mid
               .whiskers.whi-left.whi-bottom
 
-      #gradient.step.property(
-        data-x=-1988
-        data-y=1200
-        data-scale=0.5
-      )
-        .title Gradient
-        .content
-          .apple-nav
-          .radial
-
       #shadows.step.property(
-        data-x=-1176
+        data-x=-1988
         data-y=1200
         data-scale=0.5
       )
@@ -85,6 +85,16 @@ html
           .inset
             | Greetings,<br />
             | my name is shadow.
+
+      #gradient.step.property(
+        data-x=-1176
+        data-y=1200
+        data-scale=0.5
+      )
+        .title Gradient
+        .content
+          .apple-nav
+          .radial
 
       #google-lofter.step(
         data-x=-770
@@ -108,7 +118,7 @@ html
         data-y=1200
         data-scale=0.5
       )
-        .title Opacity
+        .title Opacity (&amp; transition)
         .content
           .renren-button
             .renren-button-icon

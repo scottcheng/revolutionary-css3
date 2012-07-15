@@ -100,6 +100,10 @@ a
 
 #impact
   p
+    font-size 60%
+
+#impact-old
+  p
     margin 2em 0
     font-size 75%
     em
@@ -120,14 +124,14 @@ a
 
   .visual em
     display inline-block
-    background-color darkgrey
+    background-image url('ui/low_contrast_linen.png')
     overflow hidden
     padding 12px 27px
     border-radius 21px
-    border 12px solid #fff
+    //border 12px solid #fff
     color #fff
     text-shadow 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px #ff00de, 0 0 150px red
-    box-shadow 0 0 21px rgba(0, 0, 0, .25)
+    box-shadow inset 0 0 12px rgba(0, 0, 0, .75)
 
 @-webkit-keyframes swing-anim
   from
@@ -277,6 +281,7 @@ doraemon-border()
 #shadows
   .inset
     -webkit-box-sizing border-box
+    border-radius 12px
     margin auto
     width 900px
     height 300px
@@ -337,7 +342,7 @@ doraemon-border()
       background-color #fafafa
 
     & > div
-      opacity .5
+      opacity .2
       transition opacity .3s ease-out
       float left
     &:hover > div
