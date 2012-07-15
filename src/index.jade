@@ -9,7 +9,7 @@ html
     #impress
 
       #title.step(
-        data-z=20000
+        data-z=40000
         data-rotate=60
         data-rotate-x=-45
         data-rotate-y=45
@@ -29,7 +29,7 @@ html
       )
         p.visual 
           | <em>Stunning visual effect</em><br />
-          | with <span class="problem">non-editable rasterized images</span>
+          | with <span class="problem">non-flexible rasterized images</span>
         p.animation
           | <em>Fancy animation</em><br />
           | with <span class="problem">complex and error-prone JavaScript</span>
@@ -73,7 +73,7 @@ html
         .title Gradient
         .content
           .apple-nav
-          // TODO radial gradient
+          .radial
 
       #shadows.step.property(
         data-x=-1176
@@ -101,7 +101,7 @@ html
         .lofter-box.box
           .title Lofter
           .content
-            // TODO
+            img(src='img/lofter.png')
 
       #opacity.step.property(
         data-x=-364
@@ -132,7 +132,7 @@ html
         .title Reflection
         .content
           .ibooks-wrapper
-            img.ibooks(src='img/ibooks.jpg')  // TODO change to RAD
+            img.ibooks(src='img/ibooks.jpg')
 
       #transform.step(
         data-x=1260
@@ -169,17 +169,25 @@ html
             .spinner-dot
             .spinner-dot
 
-      #end.step
-      // css3 logo
-      // reference
-        // impress
-        // font
-        // patterns from 
-        // a(href='http://subtlepatterns.com/') SubtlePatterns
-        // Doraemon inspired by 
-        // a(href='http://slides.html5rocks.com/#rounded-corners') HTML5 Rocks
-        // CSS3 tags inspired by
-        // a(href='http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/tagtastic-tag-cloud-with-css-transformations/') Luke Spoor
+      #end.step(
+        data-x=2884
+        data-y=2400
+        data-z=900
+        data-scale=0.5
+        data-rotate-x=-60
+        data-rotate-y=60
+      )
+        .css3-logo-wrapper
+          img(src='img/css3-logo.png')
+      // Credits
+      // impress
+      // font
+      // patterns from 
+      // a(href='http://subtlepatterns.com/') SubtlePatterns
+      // Doraemon inspired by 
+      // a(href='http://slides.html5rocks.com/#rounded-corners') HTML5 Rocks
+      // CSS3 tags inspired by
+      // a(href='http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/tagtastic-tag-cloud-with-css-transformations/') Luke Spoor
 
 
     // Start impress
