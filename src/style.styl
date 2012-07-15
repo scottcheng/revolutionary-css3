@@ -27,8 +27,14 @@ box-align()
 box-pack()
   -webkit-box-pack arguments
 
+box-reflect()
+  -webkit-box-reflect arguments
+
+lightestred = #FE6F66
+lighterred = #EC625A
 lightred = #e9463c
 red = #f00
+darkred = #993832
 darkgrey = #555
 lightblue = #3c96e9
 
@@ -58,11 +64,10 @@ a
 
   & > .title
     font-size 60%
-    width 30%
-    margin-left 70%
     text-align right
-    border-bottom 1px solid darkgrey
+    border-right 6px solid darkgrey
     margin-bottom 2em
+    padding-right 1em
     text-transform capitalize
 
 #title
@@ -113,11 +118,12 @@ a
     border 12px solid #fff
     color #fff
     text-shadow 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px #ff00de, 0 0 150px red
-    box-shadow 0 0 21px rgba(0,0,0,.25)
+    box-shadow 0 0 21px rgba(0, 0, 0, .25)
 
 #how
   h1
     font-size 550%
+    line-height .8em
     text-align center
     text-transform uppercase
 
@@ -241,7 +247,7 @@ doraemon-border()
   .apple-nav
     width 900px
     height 45px
-    background-image -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), to(gray))
+    background-image -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(gray))
     border-radius 12px
 
 #shadows
@@ -251,23 +257,10 @@ doraemon-border()
     width 900px
     height 300px
     background-image url('ui/low_contrast_linen.png')
-    box-shadow inset 0 24px 60px rgba(0,0,0,.75)
+    box-shadow inset 0 24px 60px rgba(0, 0, 0, .75)
     color #222
-    text-shadow 0 1px 0 #555
+    text-shadow 0 1px 0 rgba(255, 255, 255, .15)
     padding 75px 225px
-
-.google-button
-    -webkit-user-select: none;
-    margin 12px auto
-    font-size 30px
-    color white
-    text-transform uppercase
-    text-shadow 0 2px rgba(0, 0, 0, 0.25)
-    border-radius 6px
-    padding 12px
-    width 300px
-    display inline-block
-    cursor default
 
 #google-lofter
   & > .box
@@ -283,19 +276,31 @@ doraemon-border()
       height 600px
 
       .google-button
-        background-image -webkit-linear-gradient(top,#dd4b39,#d14836)
+        -webkit-user-select none
+        margin 12px auto
+        font-size 30px
+        color white
+        text-transform uppercase
+        text-shadow 0 2px rgba(0, 0, 0, 0.25)
+        border-radius 6px
+        padding 12px
+        width 300px
+        display inline-block
+        cursor pointer
+        background-image -webkit-linear-gradient(top, #dd4b39, #d14836)
         border 1px solid transparent
         &:hover
-          background-image -webkit-linear-gradient(top,#dd4b39,#c53727)
+          background-image -webkit-linear-gradient(top, #dd4b39, #c53727)
           border 1px solid #b0281a
           box-shadow 0 3px 3px rgba(0,0,0,0.2)
         &:active
-          background-image -webkit-linear-gradient(top,#dd4b39,#b0281a)
+          background-image -webkit-linear-gradient(top, #dd4b39, #b0281a)
           border 1px solid #992a1b
-          box-shadow inset 0 3px 6px rgba(0,0,0,0.3)
+          box-shadow inset 0 3px 6px rgba(0, 0, 0, 0.3)
 
 #opacity
   .renren-button
+    -webkit-user-select none
     width 390px
     height 60px
     margin 0 auto
@@ -303,30 +308,171 @@ doraemon-border()
     border-radius 3px
     background-color #f7f7f7
     transition background-color .3s ease-in-out
+    cursor pointer
     &:hover
       background-color #fafafa
 
-    .wrapper
+    & > div
       opacity .5
-      transition opacity .3s ease-in-out
-      &:hover
-        opacity 1
-      & div
-        float left
+      float left
+    &:hover > div
+      opacity .7
 
-      .renren-button-icon
-        width 60px
-        height 60px
-        background-repeat no-repeat
-        background-position 8px 9px
-        background-image url('img/renren-button-icon.png')
-      
-      .renren-button-text
-        color darkgrey
-        height 60px
-        width 330px
-        text-align center
-        padding 9px 12px
-        border-left 3px solid #DDD
-        font-size 30px
-        -webkit-box-sizing border-box
+    .renren-button-icon
+      width 60px
+      height 60px
+      background-repeat no-repeat
+      background-position 8px 9px
+      background-image url('img/renren-button-icon.png')
+    
+    .renren-button-text
+      color black
+      height 60px
+      width 330px
+      text-align center
+      padding 9px 12px
+      border-left 3px solid #DDD
+      font-size 30px
+      -webkit-box-sizing border-box
+
+#opacity-image
+  .image-wrapper
+    position relative
+    margin 0 auto
+    width 500px
+    height 500px
+    box-shadow 0 0 9px rgba(0, 0, 0, .75)
+    .caption
+      position absolute
+      left 0
+      bottom 43px
+      background-color rgba(0, 0, 0, .45)
+      color #f0f0f0
+      padding 0 12px 0 51px
+      font-size 75%
+
+#reflect
+  .content
+    height 555px
+    .ibooks-wrapper
+      text-align center
+      -webkit-box-reflect: below -36px -webkit-gradient(linear, 0 100%, 0 90%, from(rgba(255, 255, 255, 0.75)), to(transparent))
+      img
+        box-shadow 0 6px 12px rgba(0, 0, 0, .75)
+        border-radius 90px
+
+#transform
+  & > .title
+    transform translate(-300px, 390px) rotate(-90deg)
+  .content
+    margin 0 0 0 240px
+    &::after
+      content ''
+      clear both
+      display none
+    .tag
+      display inline-block
+      margin 0 0 6px 54px
+      position relative
+      font-size .35em
+      font-weight bold
+      color darkred
+      text-transform lowercase
+      text-shadow 0 1px 0 rgba(255, 255, 255, .4)
+      padding .417em .417em .417em 1.2em
+      border-top 1px solid darkred
+      border-right 1px solid darkred
+      border-bottom 1px solid darkred
+      border-radius 0 .25em .25em 0
+      background-image -webkit-linear-gradient(top, lightestred, lighterred)
+      z-index 10
+
+      &:before
+        content ''
+        width 1.66em
+        height 1.66em
+        left -.84em
+        top .33em
+        background-image -webkit-linear-gradient(left top, lightestred, lighterred)
+        position absolute
+        transform rotate(45deg)
+        border-left 1px solid darkred
+        border-bottom 1px solid darkred
+        border-radius 0 0 0 .25em
+
+      &:after
+        content ''
+        position absolute
+        width .5em
+        height .5em
+        top .91em
+        left 0
+        background white
+        border-radius .25em
+        border 1px solid darkred
+        box-shadow 0 1px 0 rgba(255, 255, 255, .6)
+        z-index 9999
+
+#animation
+  .spinner
+    position relative
+    width 340px
+    height 340px
+    margin 0 auto
+
+    .spinner-dot
+      position absolute
+      background-color transparent
+      height 60px
+      width 60px
+      border-radius 20px
+      -webkit-animation-name spinningAnim
+      -webkit-animation-duration 1.04s
+      -webkit-animation-iteration-count infinite
+      -webkit-animation-direction linear
+
+      &:nth-child(1)
+        left 0
+        top 140px
+        -webkit-animation-delay 0.39s
+
+      &:nth-child(2)
+        left 40px
+        top 40px
+        -webkit-animation-delay 0.52s
+
+      &:nth-child(3)
+        left 140px
+        top 0
+        -webkit-animation-delay 0.65s
+
+      &:nth-child(4)
+        right 40px
+        top 40px
+        -webkit-animation-delay 0.78s
+
+      &:nth-child(5)
+        right 0
+        top 140px
+        -webkit-animation-delay 0.91s
+
+      &:nth-child(6)
+        right 40px
+        bottom 40px
+        -webkit-animation-delay 1.04s
+
+      &:nth-child(7)
+        left 140px
+        bottom 0
+        -webkit-animation-delay 1.17s
+
+      &:nth-child(8)
+        left 40px
+        bottom 40px
+        -webkit-animation-delay 1.3s
+
+@-webkit-keyframes spinningAnim
+  0%
+    background-color darkgrey
+  100%
+    background-color transparent
