@@ -20,7 +20,7 @@ a {
   -webkit-transition: 0.25s;
 }
 a:hover {
-  color: #f00;
+  color: #e9463c;
 }
 .step {
   position: relative;
@@ -34,7 +34,7 @@ a:hover {
 .step.active {
   opacity: 1;
 }
-.step > .title {
+.step > h2 {
   font-size: 60%;
   text-align: right;
   border-right: 6px solid #555;
@@ -74,7 +74,7 @@ margin
   margin-top: 3em;
 }
 #impact p {
-  font-size: 60%;
+  font-size: 54%;
 }
 #impact-old p {
   margin: 2em 0;
@@ -119,7 +119,7 @@ margin
 #how:not(.present) {
   opacity: 0.02;
 }
-#how h1 {
+#how .how {
   font-size: 550%;
   line-height: 0.8em;
   text-align: center;
@@ -384,7 +384,7 @@ margin
   box-shadow: 0 6px 12px rgba(0,0,0,0.75);
   -webkit-border-radius: 90px;
 }
-#transform > .title {
+#transform > h2 {
   -webkit-transform: translate(-300px, 390px) rotate(-90deg);
 }
 #transform .content {
@@ -504,6 +504,27 @@ margin
     background-color: transparent;
   }
 }
+#end .credits a {
+  font-weight: bold;
+}
+#end .credits h2 {
+  line-height: 2em;
+  border-bottom: 1px solid #e9463c;
+  margin-bottom: 1.5em;
+  font-size: 50%;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+#end .credits h2 .title {
+  font-size: 150%;
+}
+#end .credits p {
+  font-size: 50%;
+  line-height: 2em;
+  text-align: center;
+}
 #end .css3-logo-wrapper {
+  margin-top: 1em;
   text-align: center;
 }

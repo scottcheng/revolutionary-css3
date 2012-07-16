@@ -51,7 +51,7 @@ a
   text-decoration none
   transition .25s
   &:hover
-    color red
+    color lightred
 
 .step
   position relative
@@ -65,7 +65,7 @@ a
   &.active
     opacity 1
 
-  & > .title
+  & > h2
     font-size 60%
     text-align right
     border-right 6px solid darkgrey
@@ -100,7 +100,7 @@ a
 
 #impact
   p
-    font-size 60%
+    font-size 54%
 
 #impact-old
   p
@@ -142,7 +142,7 @@ a
 #how
   &:not(.present)
     opacity 0.02
-  h1
+  .how
     font-size 550%
     line-height .8em
     text-align center
@@ -392,7 +392,7 @@ doraemon-border()
         border-radius 90px
 
 #transform
-  & > .title
+  & > h2
     transform translate(-300px, 390px) rotate(-90deg)
   .content
     margin 0 0 0 240px
@@ -508,5 +508,24 @@ doraemon-border()
     background-color transparent
 
 #end
+  .credits
+    a
+      font-weight bold
+    h2
+      line-height 2em
+      border-bottom 1px solid lightred
+      margin-bottom 1.5em
+      font-size 50%
+      width 60%
+      margin-left 20%
+      text-align center
+      .title
+        font-size 150%
+    p
+      font-size 50%
+      line-height 2em
+      text-align center
+
   .css3-logo-wrapper
+    margin-top 1em
     text-align center

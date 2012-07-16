@@ -20,7 +20,6 @@ html
           | <span class="adj">Revolutionary</span><br />
           | <span class="noun">CSS 3</span>
         p.subtitle A non-technical intro to CSS level 3
-        // p.subtitle Web development made infinitely easier.
 
       #impact.step(
         data-x=-600
@@ -28,7 +27,7 @@ html
         data-rotate=90
         data-scale=0.25
       )
-        p Web development has never been so simple and flexible.
+        p Web UI development has never been so simple and flexible.
 
       #impact-old.step(
         data-x=-810
@@ -49,14 +48,14 @@ html
         data-z=-100
         data-scale=8
       )
-        h1 How?
+        p.how How?
 
       #border-radius.step.property(
         data-x=-2800,
         data-y=1200
         data-scale=0.5
       )
-        .title Rounded corners
+        h2 Rounded corners
         .content
           .doraemon
             .face
@@ -80,7 +79,7 @@ html
         data-y=1200
         data-scale=0.5
       )
-        .title Shadows
+        h2 Shadows
         .content
           .inset
             | Greetings,<br />
@@ -91,7 +90,7 @@ html
         data-y=1200
         data-scale=0.5
       )
-        .title Gradient
+        h2 Gradient
         .content
           .apple-nav
           .radial
@@ -118,7 +117,7 @@ html
         data-y=1200
         data-scale=0.5
       )
-        .title Opacity (&amp; transition)
+        h2 Opacity (&amp; transition)
         .content
           .renren-button
             .renren-button-icon
@@ -139,7 +138,7 @@ html
         data-y=1200
         data-scale=0.5
       )
-        .title Reflection
+        h2 Reflection
         .content
           .ibooks-wrapper
             img.ibooks(src='img/ibooks.jpg')
@@ -149,7 +148,7 @@ html
         data-y=1200
         data-scale=0.5
       )
-        .title Transformation
+        h2 Transformation
         .content
           .tag Text overflow
           .tag Columns
@@ -167,7 +166,7 @@ html
         data-y=1200
         data-scale=0.5
       )
-        .title Animation
+        h2 Animation
         .content
           .spinner
             .spinner-dot
@@ -185,19 +184,38 @@ html
         data-z=900
         data-scale=0.5
         data-rotate-x=-60
-        data-rotate-y=60
+        data-rotate-y=45
       )
+        .credits
+          h2 
+            | <a href="#" class="title">The Revolutionary CSS 3</a><br />
+            | brought to you by
+            | <a href="https://github.com/scottcheng" target="_blank">Scott Cheng</a>
+          p
+            | <a href="http://bartaz.github.com/impress.js/" target="_blank">impress.js presentation framework</a>
+            | by
+            | <a href="http://bartaz.github.com/" target="_blank">Bartek Szopka</a>
+          p
+            | <a href="http://www.google.com/webfonts/specimen/Telex" target="_blank">Telex font</a>
+            | by Andrés Torresi for
+            | <a href="http://www.huertatipografica.com.ar/" target="_blank">Huerta Tipográfica</a>
+          p
+            | <a href="http://subtlepatterns.com/light-wool/" target="_blank">Light wool pattern</a>
+            | by
+            | <a href="http://www.tall.me.uk/" target="_blank">Andy Davies</a>
+          p
+            | <a href="http://subtlepatterns.com/low-contrast-linen/" target="_blank">Low contrast linen pattern</a>
+            | by Jordan Pittman
+          p
+            | <a href="#border-radius">Doraemon</a>
+            | inspired by 
+            | <a href="http://slides.html5rocks.com/#rounded-corners" target="_blank">HTML5 Rocks Slides</a>
+          p
+            | <a href="#transform">CSS3 tags</a>
+            | inspired by
+            | <a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/tagtastic-tag-cloud-with-css-transformations/" target="_blank">Luke Spoor</a>
         .css3-logo-wrapper
-          img(src='img/css3-logo.png')
-      // Credits
-      // impress
-      // font
-      // patterns from 
-      // a(href='http://subtlepatterns.com/') SubtlePatterns
-      // Doraemon inspired by 
-      // a(href='http://slides.html5rocks.com/#rounded-corners') HTML5 Rocks
-      // CSS3 tags inspired by
-      // a(href='http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/tagtastic-tag-cloud-with-css-transformations/') Luke Spoor
+            img(src='img/css3-logo.png')
 
 
     // Start impress
