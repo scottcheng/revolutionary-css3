@@ -8,7 +8,7 @@ a:hover{color:#e9463c}
 .step.active{opacity:1}
 .step > h2{font-size:60%;text-align:right;border-right:6px solid #555;margin-bottom:2em;padding-right:1em;text-transform:capitalize}
 .step .info{margin-top:1em;text-align:center;font-size:.27em;font-style:italic}
-#title .info{text-align:right;margin-top:0;margin-bottom:.3em}
+#title .info{text-align:left;margin-top:0;margin-bottom:.3em}
 #title h1{text-align:center;border-top:3px solid #e9463c;border-bottom:3px solid #e9463c;padding:1em 0;text-transform:uppercase;}
 #title h1 span{display:inline-block;margin}
 #title h1 .article{letter-spacing:285px;margin-right:-285px}
@@ -101,7 +101,7 @@ a:hover{color:#e9463c}
 }@-o-keyframes spinning-anim{0%{background-color:#555}
 100%{background-color:transparent}
 }#end .credits a{font-weight:bold}
-#end .credits h2{line-height:2em;border-bottom:1px solid #e9463c;margin-bottom:1.5em;font-size:50%;width:60%;margin-left:20%;text-align:center;}
+#end .credits h2{line-height:2em;border-bottom:1px solid #e9463c;margin-bottom:1.5em;padding-bottom:.5em;font-size:50%;width:60%;margin-left:20%;text-align:center;}
 #end .credits h2 .title{font-size:150%}
 #end .credits p{font-size:50%;line-height:2em;text-align:center}
 #end .css3-logo-wrapper{margin-top:1em;text-align:center}
