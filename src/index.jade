@@ -3,7 +3,7 @@ html
   head
     meta(charset='utf-8')
     //- meta(name='viewport', content='width=1024')
-    //- meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-capable', content='yes')
     
     title The Revolutionary CSS 3
     meta(name='author', content='Scott Cheng')
@@ -15,8 +15,8 @@ html
   body.impress-not-supported
 
     .fallback-message
-      | No offense, but you seem to be using an ancient browser :(<br />
-      | Get a <a href="http://www.google.com/chrome/" target="_blank">Chrome</a> now!
+      | You must be either using a mobile browser or an ancient one!<br />
+      | If the latter, I sincerely suggest you come back in <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>.
 
     #impress
 
@@ -157,7 +157,7 @@ html
         .content
           .ibooks-wrapper
             img.ibooks(src='img/ibooks.jpg')
-          .info (<a href="http://www.google.com/chrome/" target="_blank">Chrome</a> only)
+          .info (WebKit only)
 
       #transform.step(
         data-x=1260
