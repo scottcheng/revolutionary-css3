@@ -187,7 +187,7 @@ html
         data-rotate-y=45
       )
         .credits
-          h2 
+          h2
             | <a href="#" class="title">The Revolutionary CSS 3</a><br />
             | brought to you by
             | <a href="https://github.com/scottcheng" target="_blank">Scott Cheng</a>
@@ -221,4 +221,17 @@ html
     // Start impress
     script(src='lib/impress.js')
     script
-      impress().init();
+      if (navigator.appVersion.indexOf('Chrome') === -1) {
+        document.body.innerHTML = '<p class="non-chrome">This presentation is currently only compatible with <a href="http://www.google.com/chrome/">Chrome</a>.<br />More browser support coming soon.</p>';
+      } else {
+        impress().init();
+      }
+    script
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33401065-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
