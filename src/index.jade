@@ -1,25 +1,38 @@
 !!!
 html
   head
+    meta(charset='utf-8')
+    //- meta(name='viewport', content='width=1024')
+    //- meta(name='apple-mobile-web-app-capable', content='yes')
+    
     title The Revolutionary CSS 3
+    meta(name='author', content='Scott Cheng')
+    meta(name='description', content='A non-technical intro to CSS level 3')
+
     link(href='http://fonts.googleapis.com/css?family=Telex', rel='stylesheet')
     link(href='style.css', rel='stylesheet')
 
-  body
+  body.impress-not-supported
+
+    .fallback-message
+      | No offense, but you seem to be using an ancient browser :(<br />
+      | Get a <a href="http://www.google.com/chrome/" target="_blank">Chrome</a> now!
+
     #impress
 
       #title.step(
-        data-z=40000
+        data-z=100000
         data-rotate=60
-        data-rotate-x=-45
-        data-rotate-y=45
+        data-rotate-x=-15
+        data-rotate-y=15
         data-scale=100
       )
+        .info Best with <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>
         h1
           | <span class="article">The</span><br />
           | <span class="adj">Revolutionary</span><br />
           | <span class="noun">CSS 3</span>
-        p.subtitle A non-technical intro to CSS level 3
+        .subtitle A non-technical intro to CSS level 3
 
       #impact.step(
         data-x=-600
@@ -27,7 +40,7 @@ html
         data-rotate=90
         data-scale=0.25
       )
-        p Web UI development has never been so simple and flexible.
+        p Web UI development has never been so <em>simple</em> and <em>flexible</em>.
 
       #impact-old.step(
         data-x=-810
@@ -48,7 +61,7 @@ html
         data-z=-100
         data-scale=8
       )
-        p.how How?
+        .how How?
 
       #border-radius.step.property(
         data-x=-2800,
@@ -73,6 +86,7 @@ html
               .whiskers.whi-left.whi-top
               .whiskers.whi-left.whi-mid
               .whiskers.whi-left.whi-bottom
+          .info Try mouseover Doraemon!
 
       #shadows.step.property(
         data-x=-1988
@@ -122,6 +136,7 @@ html
           .renren-button
             .renren-button-icon
             .renren-button-text Download Album
+          .info Try mouseover the button!
 
       #opacity-image.step(
         data-x=42
@@ -142,6 +157,7 @@ html
         .content
           .ibooks-wrapper
             img.ibooks(src='img/ibooks.jpg')
+          .info (<a href="http://www.google.com/chrome/" target="_blank">Chrome</a> only)
 
       #transform.step(
         data-x=1260
@@ -209,7 +225,7 @@ html
           p
             | <a href="#border-radius">Doraemon</a>
             | inspired by 
-            | <a href="http://slides.html5rocks.com/#rounded-corners" target="_blank">HTML5 Rocks Slides</a>
+            | <a href="http://slides.html5rocks.com/#rounded-corners" target="_blank">HTML5 Rocks slides</a>
           p
             | <a href="#transform">CSS3 tags</a>
             | inspired by
@@ -221,11 +237,7 @@ html
     // Start impress
     script(src='lib/impress.js')
     script
-      if (navigator.appVersion.indexOf('Chrome') === -1) {
-        document.body.innerHTML = '<p class="non-chrome">This presentation is currently only compatible with <a href="http://www.google.com/chrome/">Chrome</a>.<br />More browser support coming soon.</p>';
-      } else {
-        impress().init();
-      }
+      impress().init();
     script
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-33401065-1']);
