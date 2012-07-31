@@ -1,5 +1,5 @@
 *{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
-body{font-family:Telex,sans-serif;color:#555;background-image:url("ui/light_wool.png")}
+body{font-family:sans-serif;color:#555;background-image:url("ui/light_wool.png")}
 ::selection{background:#fe6f66}
 ::-moz-selection{background:#fe6f66}
 a{color:inherit;text-decoration:none;-webkit-transition:.25s;-moz-transition:.25s;-ms-transition:.25s;-o-transition:.25s;transition:.25s;}
@@ -106,9 +106,14 @@ a:hover{color:#e9463c}
 #end .credits h2 .title{font-size:150%}
 #end .credits p{font-size:50%;line-height:2em;text-align:center}
 #end .css3-logo-wrapper{margin-top:1em;text-align:center}
-.fallback-message{display:none;width:800px;margin:150px auto;font-size:20px;line-height:200%;text-align:center;}
-.fallback-message a{font-weight:bold}
-.impress-not-supported .fallback-message{display:block}
+#fallback-message{display:none;width:800px;margin:150px auto;font-size:20px;line-height:200%;text-align:center;}
+#fallback-message a{font-weight:bold}
+.impress-not-supported #fallback-message{display:block}
+#hint{display:none}
+.impress-enabled #hint{display:block;position:fixed;left:0;right:0;bottom:-100px;background:rgba(233,70,60,0.75);color:#eee;text-align:center;font-size:1.5em;padding:.5em 0;opacity:0;-webkit-transition:opacity .5s,bottom .5s;-moz-transition:opacity .5s,bottom .5s;-ms-transition:opacity .5s,bottom .5s;-o-transition:opacity .5s,bottom .5s;transition:opacity .5s,bottom .5s}
+.impress-on-title #hint{opacity:1;bottom:0;-webkit-transition:opacity .5s 1.5s,bottom .5s 1.5s;-moz-transition:opacity .5s 1.5s,bottom .5s 1.5s;-ms-transition:opacity .5s 1.5s,bottom .5s 1.5s;-o-transition:opacity .5s 1.5s,bottom .5s 1.5s;transition:opacity .5s 1.5s,bottom .5s 1.5s}
+.impress-enabled{pointer-events:none;}
+.impress-enabled #impress,.impress-enabled #fallback-message,.impress-enabled #fork{pointer-events:auto}
 @-moz-keyframes swing-anim{0%{-webkit-transform:rotate(-15deg);-moz-transform:rotate(-15deg);-ms-transform:rotate(-15deg);-o-transform:rotate(-15deg);transform:rotate(-15deg)}
 100%{-webkit-transform:rotate(15deg);-moz-transform:rotate(15deg);-ms-transform:rotate(15deg);-o-transform:rotate(15deg);transform:rotate(15deg)}
 }@-webkit-keyframes swing-anim{0%{-webkit-transform:rotate(-15deg);-moz-transform:rotate(-15deg);-ms-transform:rotate(-15deg);-o-transform:rotate(-15deg);transform:rotate(-15deg)}

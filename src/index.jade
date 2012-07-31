@@ -14,9 +14,17 @@ html
 
   body.impress-not-supported
 
-    .fallback-message
+    #fallback-message
       | You must be either using a mobile browser or an ancient one!<br />
       | If the latter, I sincerely suggest you come back in <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>.
+
+    #hint
+      p Use spacebar, arrow keys or page up / down to navigate
+
+    script
+      if ('ontouchstart' in document.documentElement) {
+        document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
+      }
 
     #impress
 
@@ -58,7 +66,6 @@ html
       #how.step(
         data-x=0
         data-y=0
-        data-z=-100
         data-scale=8
       )
         .how How?
@@ -113,6 +120,7 @@ html
         data-x=-770
         data-y=1500
         data-z=100
+        data-rotate-x=-75
         data-scale=0.25
       )
         .google-box.box
@@ -141,7 +149,8 @@ html
       #opacity-image.step(
         data-x=42
         data-y=1500
-        data-z=100
+        data-z=-100
+        data-rotate-x=-105
         data-scale=0.25
       )
         .image-wrapper
@@ -233,7 +242,7 @@ html
         .css3-logo-wrapper
             img(src='img/css3-logo.png')
 
-    a(href='https://github.com/scottcheng/the-revolutionary-css3-impressjs', target='_blank')
+    a#fork(href='https://github.com/scottcheng/the-revolutionary-css3-impressjs', target='_blank')
       img(
         style='position: absolute; top: 0; right: 0; border: 0;',
         src='https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png',
