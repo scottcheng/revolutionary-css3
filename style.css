@@ -1,5 +1,5 @@
 *{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
-body{font-family:sans-serif;color:#555;background-image:url("ui/light_wool.png")}
+body{font-family:Telex,sans-serif;color:#555;background-image:url("ui/light_wool.png")}
 ::selection{background:#fe6f66}
 ::-moz-selection{background:#fe6f66}
 a{color:inherit;text-decoration:none;-webkit-transition:.25s;-moz-transition:.25s;-ms-transition:.25s;-o-transition:.25s;transition:.25s;}
