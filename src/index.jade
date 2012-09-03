@@ -242,17 +242,30 @@ html
         .css3-logo-wrapper
             img(src='img/css3-logo.png')
 
-    a#fork(href='https://github.com/scottcheng/the-revolutionary-css3-impressjs', target='_blank')
-      img(
-        style='position: absolute; top: 0; right: 0; border: 0;',
-        src='https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png',
-        alt='Fork me on GitHub'
+
+    #social
+
+      a.twitter-share-button(
+        href='https://twitter.com/share',
+        data-url='http://scottcheng.com/the-revolutionary-css3-impressjs/',
+        data-via="sctcheng",
+        data-count='none'
+      ) Tweet
+
+      iframe(
+        src='http://ghbtns.com/github-btn.html?user=scottcheng&repo=the-revolutionary-css3-impressjs&type=fork',
+        allowtransparency='true',
+        frameborder='0',
+        scrolling='0',
+        width='53px',
+        height='20px'
       )
+
 
     script(src='lib/impress.js')
     script
       impress().init();
-    script
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-33401065-1']);
       _gaq.push(['_trackPageview']);

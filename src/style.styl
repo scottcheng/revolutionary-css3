@@ -668,9 +668,17 @@ doraemon-border()
   bottom 0
   transition opacity .5s 1.5s, bottom .5s 1.5s
 
+#social
+  position absolute
+  top 10px
+  right 10px
+  *
+    margin-left 10px
+
 .impress-enabled
   pointer-events none
   #impress,
-  #fallback-message
-  #fork
+  #fallback-message,
+  #social *
     pointer-events auto
+
