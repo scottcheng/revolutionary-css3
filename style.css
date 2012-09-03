@@ -112,8 +112,10 @@ a:hover{color:#e9463c}
 #hint{display:none}
 .impress-enabled #hint{display:block;position:fixed;left:0;right:0;bottom:-100px;background:rgba(233,70,60,0.75);color:#eee;text-align:center;font-size:1.5em;padding:.5em 0;opacity:0;-webkit-transition:opacity .5s,bottom .5s;-moz-transition:opacity .5s,bottom .5s;-ms-transition:opacity .5s,bottom .5s;-o-transition:opacity .5s,bottom .5s;transition:opacity .5s,bottom .5s}
 .impress-on-title #hint{opacity:1;bottom:0;-webkit-transition:opacity .5s 1.5s,bottom .5s 1.5s;-moz-transition:opacity .5s 1.5s,bottom .5s 1.5s;-ms-transition:opacity .5s 1.5s,bottom .5s 1.5s;-o-transition:opacity .5s 1.5s,bottom .5s 1.5s;transition:opacity .5s 1.5s,bottom .5s 1.5s}
+#social{position:absolute;top:10px;right:10px;}
+#social *{margin-left:10px}
 .impress-enabled{pointer-events:none;}
-.impress-enabled #impress,.impress-enabled #fallback-message,.impress-enabled #fork{pointer-events:auto}
+.impress-enabled #impress,.impress-enabled #fallback-message,.impress-enabled #social *{pointer-events:auto}
 @-moz-keyframes swing-anim{0%{-webkit-transform:rotate(-15deg);-moz-transform:rotate(-15deg);-ms-transform:rotate(-15deg);-o-transform:rotate(-15deg);transform:rotate(-15deg)}
 100%{-webkit-transform:rotate(15deg);-moz-transform:rotate(15deg);-ms-transform:rotate(15deg);-o-transform:rotate(15deg);transform:rotate(15deg)}
 }@-webkit-keyframes swing-anim{0%{-webkit-transform:rotate(-15deg);-moz-transform:rotate(-15deg);-ms-transform:rotate(-15deg);-o-transform:rotate(-15deg);transform:rotate(-15deg)}
