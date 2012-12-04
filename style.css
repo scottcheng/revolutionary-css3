@@ -106,7 +106,8 @@ body.impress-on-how #title{opacity:0}
 #end .credits h2{line-height:2em;border-bottom:1px solid #e9463c;margin-bottom:1.5em;padding-bottom:.5em;font-size:50%;width:60%;margin-left:20%;text-align:center;}
 #end .credits h2 .title{font-size:150%}
 #end .credits p{font-size:50%;line-height:2em;text-align:center}
-#end .css3-logo-wrapper{margin-top:1em;text-align:center}
+#end .css3-logo-wrapper{margin-top:1em;text-align:center;}
+#end .css3-logo-wrapper .css3-logo{width:73px;height:66px;fill:#e9463c}
 #fallback-message{display:none;width:800px;margin:150px auto;font-size:20px;line-height:200%;text-align:center;}
 #fallback-message a{font-weight:bold}
 .impress-not-supported #fallback-message{display:block}
