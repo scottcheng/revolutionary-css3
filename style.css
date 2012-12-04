@@ -16,6 +16,7 @@ a:hover{color:#e9463c}
 #title h1 .adj{letter-spacing:39px;margin-right:-39px;font-size:50%;color:#e9463c}
 #title h1 .noun{font-size:570%;line-height:100%}
 #title .subtitle{text-align:center;font-size:50%;margin-top:1em}
+body.impress-on-how #title{opacity:0}
 #impact p{font-size:54%;}
 #impact p em{color:#e9463c}
 #impact-old p{margin:2em 0;font-size:75%;}
